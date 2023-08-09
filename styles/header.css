@@ -1,0 +1,173 @@
+	.header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		background-color:#1C232B;
+		
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		height: 76px;
+		
+		z-index: 100;
+	}
+	.left-section{
+		display:flex;
+		flex-direction: row;
+		width:200px;
+		align-items: center;
+		background-color:#1C232B;
+		margin-right:35px;
+	}
+	.button-burger-menu{
+		width:72px;
+		height:72px;
+		padding: 0px;
+		background-color:#1C232B;
+		border:none;
+		cursor:pointer;
+	}
+	.burger-menu-img{
+		height: 72px;
+		width:72px;
+		background-color:#1C232B;
+	}
+	.rutube-picture{
+		height:72px;
+		width: 154px;
+		object-fit:cover;
+		cursor:pointer;
+	}
+	.middle-section{
+		display:flex;
+		flex-direction:row;
+		justify-content: center;
+		align-items:center;
+		width:950px;
+		max-width: 250px;
+	}
+	.button-input{
+		display:flex;
+		flex-direction:row;
+		height:32px;
+		width:300px;
+		border:0.01px solid rgb(48, 48, 38);
+		border-radius:3px;
+	}
+	.search-button{
+		width:28px;
+		height:28px;
+		background-color:#1C232B;
+		border-color:#1C232B;
+		border-right-style:solid ;
+		margin:0px;
+		padding: 0px;
+	}
+	.search-button-img{
+		width:28px;
+		height:28px;
+		background-color:#1C232B;
+		object-fit:contain;
+	}
+	.search-bar{
+		height:28px;
+		width:220px;
+		font-family: Open Sans, Arial,Helvetica,sans-serif;
+		font-size: 16px;
+		color:rgb(167, 180, 196);
+		border-color:#1C232B;
+		background-color:#1C232B;
+		margin-left: 10px;
+		padding: 0px;
+		border-top-style:solid;
+		border-left-style:solid;
+	}
+	.search-bar::placeholder{
+		font-family:Open Sans, Arial,Helvetica,sans-serif;
+		font-size: 14px;
+		padding:9px 10px 8px 11,38px;
+		margin: 0px 25px 0px 0px;
+		height:44px;
+		color:rgb(150, 180, 186);
+		background-color:#1C232B;
+	}
+	.right-section{
+		display:flex;
+		flex-direction: row;
+		justify-content:center;
+		align-items:center;
+		width:400px;
+		flex-shrink: 0;
+	}
+
+	.add-img{
+		background-color:#E1E5EA;
+		border-radius: 5px;
+		width: 24px;
+		height: 24px;
+	}
+
+	.registry-button{
+		background-color:#00A1E7;
+		padding: 11px 16px;
+		color:#FFFFFF;
+		border:none;
+		height:41.11px;
+		width:154.35px;
+		border-radius:6px;
+		font-weight:bold;
+		font-size:12px;
+		cursor:pointer;
+		margin-left:2px;
+		margin-right:25px;
+		transition:box-shadow 0.15s, color 0.15s;
+	}
+	.registry-button:hover{
+		box-shadow:inset 2px 3px 4px rgba(0,161,231,0.15);
+	}
+	.moon-button,
+	.bell-button,
+	.add-button{
+		display:flex;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		position:relative;	
+		background-color:#1C232B;
+		cursor:pointer;
+		height:40px;
+		width:40px;
+		border-radius:20px;
+		border:0.1px solid rgb(48, 48, 38);
+		margin-right:20px;
+		padding: 7px;
+	}
+
+	.add-button .tooltip,
+	.bell-button .tooltip,
+	.moon-button .tooltip
+	{
+		position: absolute;
+		background-color: black;
+		color: #E1E5EA;
+		font-size:12px;
+		font-family:Open Sans, Arial,Helvetica,sans-serif;
+		padding-top:4px;
+		padding-bottom:4px;
+		padding-left:8px;
+		padding-right:8px;
+		border-radius:2px;
+		bottom:-30px;
+		opacity:0;
+		transition:opacity 0.15s;
+		pointer-events:none;
+		white-space:nowrap;
+	}
+	.add-button:hover .tooltip,
+	.bell-button:hover .tooltip,
+	.moon-button:hover .tooltip
+	{
+		opacity:1;	
+	}

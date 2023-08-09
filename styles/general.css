@@ -1,0 +1,13 @@
+	body{
+		background-color:black;
+		margin: 0px;
+		padding-top:72px;
+		padding-bottom:1000px;
+	}
+	p{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	h1{
+		margin-bottom: 8px;
+	}
